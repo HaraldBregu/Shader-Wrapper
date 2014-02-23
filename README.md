@@ -28,8 +28,8 @@ glShader C++ class implementation
     
     loadShader.link();                                              // Link shader
 
-//    GLuint position = loadShader.attributeLocation("position");   // Optional get attribute location
-//    GLuint color = loadShader.attributeLocation("color");         // Optional get attribute location
+    GLuint position = loadShader.attributeLocation("position");   // Optional get attribute location
+    GLuint color = loadShader.attributeLocation("color");         // Optional get attribute location
 
     uniforms[U_MV_PROJ_MTX] = loadShader.uniformLocation("modelViewProjectionMatrix");  // Get uniform location
     
@@ -54,8 +54,8 @@ glShader C++ class implementation
     loadShader.bindAttributeLocation(ATTRIB_VERTEX, "position");
     loadShader.bindAttributeLocation(ATTRIB_COLOR, "color");
     loadShader.link();
-//    GLuint position = loadShader.attributeLocation("position");
-//    GLuint color = loadShader.attributeLocation("color");
+    GLuint position = loadShader.attributeLocation("position"); //Optional
+    GLuint color = loadShader.attributeLocation("color"); //Optional
     uniforms[U_MV_PROJ_MTX] = loadShader.uniformLocation("modelViewProjectionMatrix");
     loadShader.use();
     //######## LOAD SHADER ########//
