@@ -38,11 +38,9 @@ glShader C++ class implementation
     
     
 
-####################################################################################
-########################## FAST IMPLEMENTATION #####################################
-####################################################################################
+//######################## FAST IMPLEMENTATION ###################################//
 
-#include "glShaderHeader.h"
+//## include "glShaderHeader.h" ##//
 
     //######## LOAD FILES ########//
 	NSString *vshPath = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"vsh"];
